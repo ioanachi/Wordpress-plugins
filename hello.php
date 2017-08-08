@@ -54,7 +54,7 @@ Dolly'll never go away again";
 // This just echoes the chosen line, we'll position it later
 function hello_dolly() {
 	$timpul = time();
-	$data = date("Y/m/d/H.a");
+	$data = date("Y/m/d/H:i:s");
 	$chosen = hello_dolly_get_lyric();
 	echo "<p id='dolly'>($chosen) $data </p>";
 }
