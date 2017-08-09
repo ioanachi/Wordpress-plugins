@@ -50,14 +50,10 @@ Dolly'll never go away again";
 	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 }
 
-
 // This just echoes the chosen line, we'll position it later
 function hello_dolly() {
-	$timpul = time();
-	$data = date("Y/m/d  H:i:s");
 	$chosen = hello_dolly_get_lyric();
-
-	echo "<p id='dolly'>($chosen) $data </p>";
+	echo '{'."<p id='dolly'>$chosen</p>".'}';
 }
 
 // Now we set that function up to execute when the admin_notices action is called
