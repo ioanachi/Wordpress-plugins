@@ -1,0 +1,1 @@
+<?php The first plugin ?>
