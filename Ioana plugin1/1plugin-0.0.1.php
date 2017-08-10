@@ -8,3 +8,4 @@ Author:      ioanachi
 Text Domain: wporg
 Domain Path: /languages
 */
+?>
