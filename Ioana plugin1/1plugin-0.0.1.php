@@ -8,17 +8,31 @@ Author:      ioanachi
 Text Domain: wporg
 Domain Path: /languages
 */
-
 add_action ("the_content", 'change' );
 
 function change ($content){
-$content = 'Nothing to see here';
-return $content;
+if( !is_page() ){
+  $content = 'Nothing to see here';
+}
 
+
+return $content;
 }
 
 
 
 
 
+
+
+
+
+
+//
+// echo ''
+// add_action ("all content", 'replacepage');
+// function replacepage ($content){
+// $content = 'NOTHING TO SEE HERE';
+// return $content;
+// }
 ?>
